@@ -1,0 +1,16 @@
+server:
+  port: 8099
+
+spring:
+  datasource:
+    url: jdbc:mysql://localhost:3306/myp?serverTimezone=Asia/Shanghai&useUnicode=true&characterEncoding=utf8&useSSL=true
+    username: root
+    password: 199416cai
+    driver-class-name: com.mysql.cj.jdbc.Driver
+
+mybatis-plus:
+  #  mapper扫描
+  mapper-locations: classpath:**/mapper/*.xml
+  #  日志打印
+  configuration:
+    log-impl: org.apache.ibatis.logging.stdout.StdOutImpl

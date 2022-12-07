@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.caicai.mybatisplusdemo.mapper.PlayerInfoMapper">
+    <select id="selectByPage" resultType="com.caicai.mybatisplusdemo.vo.PlayerInfoVO">
+        select * from player_info
+    </select>
+
+    <select id="selectByPage2" resultType="com.caicai.mybatisplusdemo.vo.PlayerInfoVO">
+        select * from player_info
+    </select>
+</mapper>
